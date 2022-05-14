@@ -1,4 +1,4 @@
-local C = require "onedarker.palette"
+local C = require "onedarker-giel.palette"
 
 local Git = {
   SignAdd = { fg = C.sign_add },

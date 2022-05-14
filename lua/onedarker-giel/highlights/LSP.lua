@@ -1,5 +1,5 @@
-local Config = require "onedarker.config"
-local C = require "onedarker.palette"
+local Config = require "onedarker-giel.config"
+local C = require "onedarker-giel.palette"
 
 local LSP = {
   LspDiagnosticsDefaultError = { fg = C.error_red },

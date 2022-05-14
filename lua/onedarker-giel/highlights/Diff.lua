@@ -1,4 +1,4 @@
-local C = require "onedarker.palette"
+local C = require "onedarker-giel.palette"
 
 local Diff = {
   DiffAdd = { fg = C.none, bg = C.diff_add },
