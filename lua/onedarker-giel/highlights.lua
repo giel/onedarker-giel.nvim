@@ -1,7 +1,7 @@
 local M = {}
 
-local Config = require "onedarker.config"
-local C = require "onedarker.palette"
+local Config = require "onedarker-giel.config"
+local C = require "onedarker-giel.palette"
 
 local common = {
   Normal = { fg = C.fg, bg = Config.transparent_background and "NONE" or C.bg },
@@ -126,13 +126,13 @@ local function highlight(group, properties)
 end
 
 function M.setup()
-  local Treesitter = require "onedarker.highlights.Treesitter"
-  local markdown = require "onedarker.highlights.markdown"
-  local Whichkey = require "onedarker.highlights.Whichkey"
-  local Notify = require "onedarker.highlights.Notify"
-  local Git = require "onedarker.highlights.Git"
-  local LSP = require "onedarker.highlights.LSP"
-  local Diff = require "onedarker.highlights.Diff"
+  local Treesitter = require "onedarker-giel.highlights.Treesitter"
+  local markdown = require "onedarker-giel.highlights.markdown"
+  local Whichkey = require "onedarker-giel.highlights.Whichkey"
+  local Notify = require "onedarker-giel.highlights.Notify"
+  local Git = require "onedarker-giel.highlights.Git"
+  local LSP = require "onedarker-giel.highlights.LSP"
+  local Diff = require "onedarker-giel.highlights.Diff"
 
   local skeletons = {
     common,
