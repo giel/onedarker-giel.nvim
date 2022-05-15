@@ -15,6 +15,7 @@ local colors = {
   light_gray = "#abb2bf",
   blue = "#61AFEF",
   dark_blue = "#223E55",
+  light_green = "#A0B4A9",
   green = "#98C379",
   cyan = "#56B6C2",
   red = "#e06c75",
