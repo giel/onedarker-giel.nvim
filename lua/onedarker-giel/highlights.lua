@@ -33,6 +33,7 @@ local common = {
   NormalFloat = { bg = C.dark },
   Visual = { bg = C.ui_blue },
   VisualNOS = { bg = C.alt_bg },
+  WinSeparator = { fg = C.search_blue, bg = C.bg },
   WarningMsg = { fg = C.error_red, bg = C.bg },
   DiffAdd = { fg = C.alt_bg, bg = C.sign_add },
   DiffChange = { fg = C.alt_bg, bg = C.sign_change, style = "underline" },
