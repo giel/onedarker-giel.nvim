@@ -133,6 +133,7 @@ function M.setup()
   local Treesitter = require "onedarker-giel.highlights.Treesitter"
   local markdown = require "onedarker-giel.highlights.markdown"
   local Whichkey = require "onedarker-giel.highlights.Whichkey"
+  local NeoTree = require "onedarker-giel.highlights.NeoTree"
   local Notify = require "onedarker-giel.highlights.Notify"
   local Git = require "onedarker-giel.highlights.Git"
   local LSP = require "onedarker-giel.highlights.LSP"
@@ -143,6 +144,7 @@ function M.setup()
     Treesitter,
     markdown,
     Whichkey,
+    NeoTree,
     Notify,
     Git,
     LSP,
