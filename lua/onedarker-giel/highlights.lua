@@ -130,25 +130,27 @@ local function highlight(group, properties)
 end
 
 function M.setup()
-  local Treesitter = require "onedarker-giel.highlights.Treesitter"
-  local markdown = require "onedarker-giel.highlights.markdown"
-  local Whichkey = require "onedarker-giel.highlights.Whichkey"
-  local NeoTree = require "onedarker-giel.highlights.NeoTree"
-  local Notify = require "onedarker-giel.highlights.Notify"
+  -- specific highlight groups (sorted)
+  local Diff = require "onedarker-giel.highlights.Diff"
   local Git = require "onedarker-giel.highlights.Git"
   local LSP = require "onedarker-giel.highlights.LSP"
-  local Diff = require "onedarker-giel.highlights.Diff"
+  local Markdown = require "onedarker-giel.highlights.Markdown"
+  local NeoTree = require "onedarker-giel.highlights.NeoTree"
+  local Notify = require "onedarker-giel.highlights.Notify"
+  local Treesitter = require "onedarker-giel.highlights.Treesitter"
+  local Whichkey = require "onedarker-giel.highlights.Whichkey"
 
   local skeletons = {
     common,
-    Treesitter,
-    markdown,
-    Whichkey,
-    NeoTree,
-    Notify,
+    -- all specific highlight groups go here (sorted)
+    Diff,
     Git,
     LSP,
-    Diff,
+    Markdown,
+    NeoTree,
+    Notify,
+    Treesitter,
+    Whichkey,
   }
 
   for _, skeleton in ipairs(skeletons) do
