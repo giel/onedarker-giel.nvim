@@ -6,7 +6,7 @@ local Git = {
   SignDelete = { fg = C.sign_delete },
   GitSignsAdd = { fg = C.sign_add },
   GitSignsChange = { fg = C.sign_change },
-  GitSignsDelete = { fg = C.sign_delete },
+  GitSignsDelete = { fg = C.white, bg = C.sign_delete },
 }
 
 return Git
