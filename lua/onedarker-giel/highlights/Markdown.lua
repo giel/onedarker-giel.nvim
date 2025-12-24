@@ -1,6 +1,6 @@
 local C = require "onedarker-giel.palette"
 
-local markdown = {
+local Markdown = {
   markdownBlockquote = { fg = C.accent },
   markdownBold = { fg = C.yellow, style = "bold" },
   markdownCode = { fg = C.green },
@@ -26,4 +26,4 @@ local markdown = {
   markdownUrl = { fg = C.cyan, style = "underline" },
 }
 
-return markdown
+return Markdown
